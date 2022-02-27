@@ -94,7 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 onPressed: () {
-                  call();
+                  select();
                 },
                 child: Ink(
                   width: double.infinity,
@@ -286,7 +286,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     borderRadius: BorderRadius.circular(12.0),
                   ),
                 ),
-                onPressed: null,
+                onPressed: () {
+                  insert('oi', '123');
+                },
                 child: Ink(
                   width: double.infinity,
                   height: 40,
